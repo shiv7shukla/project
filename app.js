@@ -79,15 +79,3 @@
 // .catch((err)=>{
 //     console.log(err);
 // });
-function getnum() {
-    return new Promise((resolve,reject)=>{
-        setTimeout(()=>{
-            let num=Math.floor(Math.random()*10+1);
-            if(num>5)
-            {
-                reject("Number greater than 5");
-            }
-            console.log(num);
-        },1000);
-    });
-}
